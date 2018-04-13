@@ -1,0 +1,26 @@
+20 Feb, Tuesday
+----------------
+
+-SnackBar
+
+   steps
+   ------
+	1. Snackbar snackbar;	//Globally declare snackbar.
+	2. View view = findViewById(R.id.activity_main); //under onCreate() method
+	3. snackbar = Snackbar.make(view, "Hello Snackbar!", Snackbar.LENGTH_INDEFINITE (or) Snackbar.LENGTH_LONG);
+	3.1. this is how we set manually the duration
+		- snackbar.setDuration(10000);
+		- snackbar.dismiss(); // this is how we provide cancel
+	4. snackbar.show();
+
+
+
+
+
+
+
+
+ Advantage is that dispaly duration of snackbar can be adjusted.
+	Snackbar.LENGTH_INDEFINITE// CONTINUOUSLY DISPLAYS untill progreamatically we dismiss it.! 
+
+	steps

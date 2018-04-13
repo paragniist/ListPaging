@@ -1,0 +1,49 @@
+
+
+this is how we change the toolbar(label) color:
+-----------------------------------------------
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+	
+	/*this is how we change the toolbar(label) color:*/     
+	app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+This is how add a pop-up Menu to the Toolbar
+
+we need to override these 2 methods ...
+
+1.onCreateOptionsMenu()
+2.onOptionsItemSelected()
+
+//this methods add pop up menu to the toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+	
+
+Now comes how to change the pop menu color
+------------------------------------------------
+
+-- go to styles.xml
+
+
+
+<style name="PopupTheme" parent="Theme.AppCompat.Light">     
+            <item name="android:background">@color/colorBackground</item> 
+            <item name="android:textColor">@color/colorItem</item>             //this code is just a pice of code in order to run this code we need to include /*   <item name="popupTheme">@style/PopupTheme</item> */ in Base Application Theme 
+</style> 
+
+--we need to define a color for above
+
+ <color name="colorBackground">#FFFFFF</color> 
+
+    //

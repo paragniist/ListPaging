@@ -1,0 +1,19 @@
+-ViewPager[Incomplete]
+
+-TabLayouts(design library)
+
+Switch between the views
+
+Types
+1.Fixed(wh n of t is 2atl and 4 atm)>>>>>Eg: YouTube
+2.Scrollable(must be more than 4)	
+
+TL wid text.
+TL with icons.
+TL with text and icons.
+
+note: iske 3 project bane hai bt "TLwithIconAndTitle" koi kaam ka nahin hai.
+    : baki 2 kaam k hain. jisme 1st wala TabLayoutWithText hai and 2nd wale mai text and icon both hai
+
+
+

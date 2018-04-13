@@ -1,0 +1,16 @@
+21 March
+
+Agenda:
+-------
+-ViewPager
+-Alert Dialogs 
+-Custom Dialogs
+-Social Media Integration [fb, google, twitter]
+-
+
+
+
+  java.lang.IllegalStateException: 
+
+Could not find a method signin(View) in the activity class com.test.vinove.designdemo.MainActivity for onClick handler on view class android.support.v7.widget.AppCompatButton
+ 

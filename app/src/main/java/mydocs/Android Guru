@@ -1,0 +1,217 @@
+//28-march-2018
+
+
+[Advanced]
+
+https://www.youtube.com/playlist?list=PL5-CQow-FW-a1okoWpfRllu_FR8otsL6D
+
+
+[Core]
+
+https://www.youtube.com/playlist?list=PL5-CQow-FW-bRJr0_fER7RoXuReZ2SfRO
+
+//As a android developer you should have knowldege about :
+
+Activity and Fragment Lifecycle
+Difference between Service and Broadcast Receiver
+Difference between Thread and AsynTask
+Difference between Aysntask and IntentService
+What is content providers
+Passing data from activity to fragment and vice versa
+Passing data from one fragment to another fragment (most imp)
+Difference between Retrofit vs mcxiaoke/android-volley
+Difference between Picasso vs Universal Image Loader vs Glide vs Fresco
+How do you support multiple screen in android?
+Manifest permissions
+Difference between dp and pixels
+What is intent filter
+How to debug android app
+Latest OS changes
+Support library changes 
+Knowledge of best open source libraries 
+What is to come Next, see Google dev channel and io. >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[need to  explore]
+In app purchase / android payment API>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[need to  learn]
+How to use material design in our app 
+Difference between View, ViewGroup and Layouts
+How requestLayout, forceLyout and onDraw method works? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[need to  learn]
+How RecyclerView works?
+Difference between RecyclerView, ListView and GridView.
+How can we make RecyclerView faster? >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>[need to  learn]
+==========================
+
+https://www.brainmobi.com/
+
+
+===============================================================================================================================================================
+Android Libraries:
+=================
+//For Image Processing :
+
+nostra13/Android-Universal-Image-Loader    //https://github.com/nostra13/Android-Universal-Image-Loader
+bumptech/glide	//https://github.com/bumptech/glide
+square/picasso	//https://github.com/square/picasso
+
+
+//For Networking :
+
+koush/AndroidAsync			//https://github.com/koush/AndroidAsync
+AsyncHttpClient/async-http-client	//https://github.com/AsyncHttpClient/async-http-client
+square/okhttp				//https://github.com/square/okhttp
+mcxiaoke/android-volley			//https://github.com/mcxiaoke/android-volley
+square/retrofit				//https://github.com/square/retrofit
+
+
+For Image Blur :
+
+kikoso/android-stackblur	//https://github.com/kikoso/android-stackblur
+500px/500px-android-blur	//https://github.com/500px/500px-android-blur
+Cutta/Simple-Image-Blur		//https://github.com/Cutta/Simple-Image-Blur
+wasabeef/Blurry			//https://github.com/wasabeef/Blurry
+
+
+For Image Crop :
+
+Yalantis/uCrop			//https://github.com/Yalantis/uCrop
+ryanhoo/PhotoCropper		//https://github.com/ryanhoo/PhotoCropper
+lyft/scissors			//https://github.com/lyft/scissors
+IsseiAoki/SimpleCropView	//https://github.com/IsseiAoki/SimpleCropView
+jayrambhia/CropperNoCropper	//https://github.com/jayrambhia/CropperNoCropper
+
+For App Intro :
+
+PaoloRotolo/AppIntro			//https://github.com/PaoloRotolo/AppIntro
+TakeoffAndroid/AppIntroAnimation	//https://github.com/TakeoffAndroid/AppIntroAnimation
+
+
+For Animation :
+
+brucetoo/ActivityAnimation	//https://github.com/brucetoo/ActivityAnimation
+linfaxin/TransitionPlayer	//https://github.com/linfaxin/TransitionPlayer
+konifar/material-cat		//https://github.com/konifar/material-cat
+lgvalle/Material-Animations	//https://github.com/lgvalle/Material-Animations
+2359media/EasyAndroidAnimations //https://github.com/2359media/EasyAndroidAnimations
+daimajia/AndroidViewAnimations	//https://github.com/daimajia/AndroidViewAnimations
+nhaarman/ListViewAnimations	//https://github.com/nhaarman/ListViewAnimations
+
+
+For Color Picker :
+
+LarsWerkman/Lobsterpicker		//https://github.com/LarsWerkman/Lobsterpicker
+fribell / ColorPickerView - Bitbucket	//https://bitbucket.org/fribell/colorpickerview
+DASAR/ShiftColorPicker			//https://github.com/DASAR/ShiftColorPicker
+gabrielemariotti/colorpickercollection	//https://github.com/gabrielemariotti/colorpickercollection
+LarsWerkman/HoloColorPicker		//https://github.com/LarsWerkman/HoloColorPicker
+
+
+For ImageViewZoom :
+
+sephiroth74/ImageViewZoom			//https://github.com/sephiroth74/ImageViewZoom
+davemorrissey/subsampling-scale-image-view	//https://github.com/davemorrissey/subsampling-scale-image-view
+chrisbanes/PhotoView				//https://github.com/chrisbanes/PhotoView
+
+
+For Chart/Graph :
+
+PhilJay/MPAndroidChart		//https://github.com/PhilJay/MPAndroidChart/blob/master/README.md
+ZuYun/Jgraph			//https://github.com/ZuYun/Jgraph/blob/master/README.md
+
+
+
+=======
+#2 Fluid UI: - Fluid UI is a browser based prototyping tool that helps in creating mobile apps across operating systems (such as iOS, Android and Windows). It has a great collection of UI widgets for mobile phones and tablets. Fluid UI is built with current web technologies like JavaScript, HTML5 and CSS3. It allows a couple of features like online collaboration, gestures and transitions, powerful animation and much more.
+
+
+
+
+=================
+
+
+
+I'd expect them to be very knowledgeable about
+
+Lifecycles for activities and fragments
+Services
+Intents
+Resources (so layouts, styles, drawables (svg and shapes), custom attrs but also dealing with languages, sizes, orientations)
+The actual android code
+RxJava (and RxAndroid)
+MVP/MVC
+Material design
+Git (commands but also branching strategies and rebasing, etc)
+Common edge cases/problems with certain classes and devices
+RESTful api design and JSON
+DI (ideally Dagger2)
+Some sqlite wrapper
+Estimating work
+Writing documentation (functional and technical)
+Debugging (including network debugging using tools like wireshark or charles)
+Performance measuring and optimisation
+Unit and integration testing
+How to create and properly document libraries (both Android and pure Java)
+How to mentor people
+How to safely refactor large code bases
+Gradle (build variants (using buildConfigField and the directories) but also custom tasks)
+Common coding patterns
+All the support libraries and the views/classes they offer
+Play services libraries (not just location/maps)
+EDIT: Forgot one of the most important things: How to work in team (so writing readable code, interacting with others over decisions, code reviews, etc)
+
+They should have at least heard of (but ideally be using)
+
+Retrofit
+Butterknife or data binding
+Retrolambda
+Timber or equivalent
+AutoValue
+Glide or Picasso, etc
+JodaTime for Android or ThreeTenABP, etc
+Mockito and robolectric
+At least some limited knowledge of
+
+iOS
+Javscript
+Kotlin
+SQL (and relational database design)
+SOAP and XML
+Development for other platforms (desktop, web or mobile)
+I'd also expect a senior developer to be reading subreddits, newsletters, watching con videos, etc and be aware of new and important things/events happening with Android and to have some personal apps or libraries publicly available (not necessarily open source but that's better).
+
+EDIT 2: apparently based on some of the other comments I wasn't clear enough, by 'very knowledgeable' I didn't mean they can spell the class name but rather they should know the methods, their parameters, when you can call methods (if they context or certain threads), when you should and shouldn't use some classes/libraries, alternatives, why their approach is the best, when ignoring rules is correct. Also senior devs should have at least a good idea of how to recreate any library/framework they're using.
+
+p
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                

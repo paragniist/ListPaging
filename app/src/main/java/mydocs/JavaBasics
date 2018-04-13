@@ -1,0 +1,550 @@
+Java Compilation Process
+========================
+
+Source code >> Compiler >>  byte code >> JVM Installed inside devices runs the instruction
+
+
+
+-Introduction to Methods and Parameters
+=======================================
+
+
+Methods is jst like a block of code
+
+eg:
+
+package com.vinove.parag;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+	   // write your code here
+        myName("Parag");
+        int finalResult = addNums(4, 5);
+        System.out.println( finalResult);
+       System.out.println( fullName("Rahul", "The Man"));
+       System.out.println(showChar('D'));
+    }
+
+    //Method
+     public static void myName(String mName) {
+        System.out.println(mName);
+     }
+
+
+-Brief about Methods and Return Types in Java
+===============================================
+
+     // Return an integer
+     public static int addNums(int a, int b) {
+        int result;
+        result = a + b;
+      //  System.out.println(" Sum = "  + (a + b));
+        return result ; // (a+b)
+     }
+
+
+     //Return a string
+
+    public static String fullName(String firstName, String lastName){
+        return firstName + " " + lastName;
+    }
+
+    // Return Character
+    public static char showChar(char c) {
+        return c;
+    }
+}
+
+
+
+
+Classes and Object
+===================
+
+
+-Classes is just like a blue print of objects.
+
+-It is just like blueprint of house but is not a house.
+
+-bt what a house is what come as a blueprint, blue print is just a map,just a guide, just a model,,,  of what should becomes something,
+ that somthing we can touch as a actual object.
+
+-classes are a bp of obj or build blocks of obj so we need a bp we need classes in order to create those objects
+
+-Classes has certain properties what makes it something we can touch as a real world object.
+
+
+
+
+public class Ball{//blueprint
+
+	//properties or instance variable
+	public String color;
+	public String name;
+	public int bounceRate;
+
+	//Behaviors
+	public void bounce(){
+		System.out.println("bouncing");
+	}
+
+
+	public void deflate(){
+		System.out.println("deflating...");
+	}
+
+
+	public void inflate(){
+		System.out.println("inflating");
+	}
+
+}
+
+
+
+---> Now we have to make a real ball or actual ball or to be very specific a actual object.
+
+
+	package com.vinove.parag;
+
+	public class Main{
+
+	public static void main(String[] args){
+
+
+	Ball myBall = new Ball();
+	Ball secondBall = new Ball();
+
+	secondBall.name= "Soccer ball";
+	secondBall.color= "Brown";
+
+	myBall.color = "Blue";
+	myBall.name = "Basketball";
+
+	System.out.println(myBall.name);
+	System.out.println(secondBall.name);
+
+	}
+
+	}
+
+
+-Instance or Member Variables- Access Control
+==============================================
+
+Access Modifier by Example
+::::::::::::::::::::::::::
+
+public class Ball{//blueprint
+
+/*
+  Public - any one can Access
+  Private - Only Accessed within the class
+*/
+
+	//properties or instance variable
+	public String color;
+	public String name;
+	public int capacity;
+	public int bounceRate;
+
+	//Behaviors
+	public void bounce(){
+		System.out.println("bouncing");
+	}
+
+
+	public void deflate(){
+		System.out.println("deflating...");
+	}
+
+
+	public void inflate(){
+		System.out.println("inflating");
+	}
+
+}
+
+
+package com.vinove.parag;
+
+	public class Main{
+
+	public static void main(String[] args){
+
+
+	Ball myBall = new Ball();
+	Ball secondBall = new Ball();
+
+	secondBall.name= "Soccer ball";
+	secondBall.color= "Brown";
+
+	myBall.color = "Blue";
+	myBall.name = "Basketball";
+
+	System.out.println(myBall.name);
+	System.out.println(secondBall.name);
+
+	}
+
+}
+
+Java Access Modifier(Private) and Intro to Constructors
+=======================================================
+
+
+-------------------------------------------------------
+public class Ball{//blueprint
+
+/*
+  Public - any one can Access
+  Private - Only Accessed within the class
+*/
+
+	//properties or instance variable
+	private String color;
+	private String name;
+	private int capacity;
+	private int bounceRate;
+
+	//Behaviors
+	public void bounce(){
+		System.out.println("bouncing");
+	}
+
+
+	public void deflate(){
+		System.out.println("deflating...");
+	}
+
+
+	public void inflate(){
+		System.out.println("inflating");
+	}
+
+}
+
+-----------------------------
+package com.vinove.parag;
+
+	public class Main{
+
+	public static void main(String[] args){
+
+
+	Ball myBall = new Ball();
+	Ball secondBall = new Ball();
+
+	secondBall.name= "Soccer ball";    //Now here we got the error
+	secondBall.color= "Brown";         //we can't access color and name property here bcz that are private in Ball class.
+
+	myBall.color = "Blue";
+	myBall.name = "Basketball";
+
+	System.out.println(myBall.name);
+	System.out.println(secondBall.name);
+
+	}
+
+}
+
+
+NOW, Lets start with constructor.
+==================================
+
+Considering above example ,In order to expose data members(properties) in another class without making them public, we can access by the help of "Constructors"
+
+Now, Let see what constructor is , how actually it works..!
+
+
+
+..>>as we have these properties
+
+private String color;
+private String name;
+private int capacity;
+private int bounceRate;
+
+...>>this is how we initialize constructor
+
+public Ball(String mColor, String mName, int capacity, int bounceRate){
+          color = mColor;
+          name = mName;
+          this.capacity = capacity;
+          this.bounceRate = bounceRate;
+}
+
+
+
+Example of above Theory Reagarding Constructor
+===============================================
+
+Ball.Java
+----------
+
+public class Ball{//blueprint
+
+/*
+  Public - any one can Access
+  Private - Only Accessed within the class
+*/
+
+	//properties or instance variable
+	private String color;
+	private String name;
+	private int capacity;
+	private int bounceRate;
+
+
+
+
+	//Parameterized Constructor
+	public Ball(String mColor, String mName, int capacity, int bounceRate){
+          color = mColor;
+          name = mName;
+          this.capacity = capacity;
+          this.bounceRate = bounceRate;
+	}
+
+	//Behaviors
+
+	public void  showColor(){		 
+	System.out.println(color);	// now you think which color is it, it is reflecting -->> "private String color;"
+	}
+
+	public void showName(){
+	System.out.println(name);	// now you think which name is it, it is reflecting -->> "private String name;"
+	}
+
+	public void bounce(){
+	System.out.println("bouncing");
+	}
+
+
+	public void deflate(){
+	System.out.println("deflating...");
+	}
+
+
+	public void inflate(){
+	System.out.println("inflating");
+	}
+
+}  
+
+--------------------------------------Another Class------------------------------------
+
+main.Java
+----------
+
+package com.vinove.parag;
+
+	public class Main{
+
+	public static void main(String[] args){
+
+
+	Ball ball = new Ball("blue", "justBall", 12, 45); // expected list of argument that we declared as a properties in "Ball Class".(mColor, mName, capacity, bounceRate)_ 
+	//this is the way we can access private data members 
+	
+	ball.showColor(); // we get the output : blue
+	ball.showName(); // justBall
+	
+
+	}
+
+}
+
+-----------------------------Getters and Setters------------------------------------
+
+More Sophisticated way to construct an object
+
+one more another way is Setter and Getter....... 
+
+So, essentiallyit is doing exactly the same thing that we did in above example but in a more flexible way.
+
+
+
+[Note : These are the different ways to hide certain things....]
+
+
+
+
+Introduction to Array
+=====================
+
+
+
+main.Java
+----------
+
+package com.vinove.parag;
+
+public class Main{
+
+	public static void main(String[] args){
+
+
+	int[] myArray = {1,2,3,4,5,6,7};
+	String[] myStringArray= {"Hello", "Hii", "H r u?"};
+
+	//Arrays have length
+	for(int i=0; i<myStringArray.length;i++){
+		System.out.println("Item " + myStringArray[i]);
+
+		}
+	
+	}
+
+}
+
+
+output
+-------
+
+Item Hello
+Item Hii
+Item H r u?
+
+
+
+-------------------------------------------------
+
+The another way to create an array as follow:
+
+
+package com.vinove.parag;
+
+public class Main{
+
+	public static void main(String[] args){
+
+
+	int[] newArray = new int[5];
+	String[] newStringArray= new String[5];
+
+
+	newArray[0] = 3;
+	newArray[1] = 4;
+	newArray[2] = 6;
+	newArray[3] = 1;
+	newArray[4] = 12;
+
+	newStringArray[0] = "Hi there!";
+	newStringArray[1] = "Vinove is one of the leading IT firm in New Delhi";
+	newStringArray[2] = "Testing Department";
+	newStringArray[3] = "Mobile Application Team";
+	newStringArray[4] = "Web Development";
+	
+
+	//Arrays have length
+	for(int i=0; i<newStringArray.length;i++){
+		System.out.println("ArrayExample: " + newStringArray[i]);
+
+		}
+	
+	}
+
+}
+
+
+output
+-------
+
+ArrayExample: Hi there!
+ArrayExample: Vinove is one of the leading IT firm in New Delhi
+ArrayExample: Testing Department
+ArrayExample: Mobile Application Team
+ArrayExample: Web Development
+
+
+
+
+==============ArrayList=========================
+
+It is use to hold hetrogeneous kind of data.
+
+
+
+package com.vinove.parag;
+
+public class Main{
+
+	public static void main(String[] args){
+
+
+ArrayList animals =new ArrayList();
+animal.add(34);
+animal.add("Cow");
+animal.add("Parrot");
+
+	for(int i=0; i<animal.size(); i++){
+		System.out.println("Animals " + animal.get[i]);
+
+		}
+
+
+    //for each loop
+    for(Object animal : animals) {
+      System.out.println(animal);
+    }
+	
+	}
+
+}
+
+
+output:
+-------
+34
+Cow 
+Parrot
+
+
+------------------better understanding of arraylist---------------------
+package com.vinove.parag;
+
+public class Main{
+
+	public static void main(String[] args){
+
+//ArrayList
+ArrayList animals =new ArrayList();
+animal.add(34);
+animal.add("Cow");
+animal.add("Pig");
+animal.add("Cheetah");
+
+
+//animals.remove(0);
+//animals.add(0, "Dog");
+//animals.remove("Cow");
+
+if(animals.contains(Parrot)){
+  animals.remove(o: "Parrot");
+  }else
+  {
+  System.out.println("Nope");  
+  }
+
+  System.out.println(animal.size());  // 2
+
+    //for each loop
+    for(Object animal : animals) {
+      System.out.println(animal);
+    }
+	}
+}
+
+
+
+
+Hashmap
+=======
+
+
+organise data
+
+

@@ -1,0 +1,99 @@
+5-March-2018
+=============
+
+-Map Demo
+-JSON Parsing
+-Sharing
+
+==================
+
+-Mail, Call, Sms, Sharing
+
+-JSON Parsing
+=============
+
+it is a light weight data format than XML.
+
+- JSON will maintain the data by using key,value pairs.
+
+- the entire JSON data will be represent by using the following
+  characters.
+
+- JSONObject  {
+- JSONArray   [
+
+
+
+continue later...project is created already by name "JSONParsing"
+
+
+===================================================================
+
+FireBase 
+
+>>2 problems in sqlite database..
+
+-data is very limited to that par dev , we cant access the data in other device.
+-we can store the limited data in DB.. 
+
+>>hosting server is required(AWS,ORACLE, MySQL).
+again problem is from our mobile application directly we can't communicate with database server in android.[Not Possible]
+
+>>Alternative : [Swiggy, Naukari, Whatsapp>>>>>> How??????]
+	:::::::
+This communication is possible with any one of the web Technologies[Java, .Net, Php](Web services, JSON XML Parsing etc..... all these things are required).
+
+
+>>Best Alternative is Android Firebase.
+-no need to have any server side knowledge.
+-no need od any database.
+-no need of deploy any db server.
+
+>>Android Firebase is Providing..
+
+Every Application have storing the user credentials..(Database)
+
+
+These are the major concepts apart from this Firebase is providing lot of features
+>>Mainly the mobile Application developer will get a requirement of, in following places will need the server side support
+Authentication
+Database
+Storage
+Notifications
+
+
+https://console.firebase.google.com/project/fir-auth-2d438/authentication/users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

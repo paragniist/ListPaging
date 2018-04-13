@@ -1,0 +1,131 @@
+15-march-2018
+=============
+
+-Agenda
+________
+
+
+-JSON Parsing
+-Map Demo
+-Sharing
+_______________
+
+--:Resources:--
+_______________
+
+Json: (8hours)
+
+	
+149min// Json@21Apps[Half done]
+
+182min //Json@Devslopes [3-4 videos]
+
+58min
+44min// Json@Mahesh [Not done]
+
+=====================
+
+Maps: (12Hours)
+
+70min // 
+120mins // Maps@Mahesh 
+
+102mins// 
+117mins// Maps@21Apps
+
+159mins //Maps@Rob
+
+150mins //Maps@Devslopes
+-------------------------------------------------------------------------------------------------------
+
+Json@21Apps
+-----------
+
+The Web
+3Parts..
+
+1.Server[Stora data at differents addresses]
+2.Clients (Computer, Laptops, Mobiles)[Consumes Data]
+3.
+
+
+How do clients communicate with server?
+
+HTTP - HyperText Transfer Protocol
+[Request / Response]
+ 
+
+Web Browsing : URL -https://www.theurlyouwant.com
+
+---------------------------------------------------
+
+JSON : a new way of sharing data efficiently
+
+
+- It is language independent- any language can read/parse a JSON object.
+- It's esay to understand
+
+JSON Example:
+
+{
+   "employees":
+   [
+      {"firstName":"John", "lastName":"Doe"},
+      {"firstName":"Anna", "lastName":"Smith"},
+      {"firstName":"Peter", "lastName":"Jones"},
+   ]}
+
+
+
+lec:2
+
+What's a library?
+
+Pre written code by other developers.
+
+Advantages of using libraries:
+==============================
+
+-All the hard work is already done for us
+-Tested, clean and efficient code
+-Hide all of the under hood the logic.
+-Supported by other developers
+
+==>Using Networking Libraries
+
+Google's Volley Library
+
+-written by smart people.
+
+[Advantage:] 
+-we don't have to worry about AsyncTask anymore.
+-All of the networking is done for us - we just call methods and we are done!
+-Faster and efficient parsing, and image loading.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

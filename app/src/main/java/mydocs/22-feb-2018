@@ -1,0 +1,56 @@
+22-feb-2018
+===========
+
+Fetch Data from Webservice
+
+-Libraries - Volley, Retrofit etc.
+
+-Why Libraries?
+
+-Working Examples
+
+-JSON - GSON
+
+
+
+VOLLEY
+=======
+
+	OPEN SOURCE LIBRARY DEVELOPED BY GOOGLE
+
+
+
+Now  how to convert json to java 
+
+
+
+
+=========================================
+
+if we want to fetch list of cyurrently visible  items from RecyclerView 
+
+then we need to call	
+	layoutManager.getChildCount();// 6
+
+
+if we want to fetch list of total items in adapter from RecyclerView
+
+then we nedd to call
+	 layoutManager.getItemCount();// 10
+
+
+
+Scrolled out of the screen
+
+	layoutManager.firstFindVisibleItemPosition(); // 2
+
+
+
+VisibleItems = 6
+TotalItems = 10
+Scrolled Out Items = 2
+
+Visible Items + ScrolledOut Items == Total Items  // if true then we have to fetch new data 
+ 
+
+ 

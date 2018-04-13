@@ -1,0 +1,17 @@
+13-march-2018
+=============
+
+
+Back to regular worksheet...
+============================
+
+
+Fragment vs FragmentActivity
+-----------------------------
+
+-Fragment is a part of Android SDK, which supports after 3.x devices  -> (Honeycomb and up)
+-FragmentActivity is a part of third party support library, which supports in all devices.
+
+android.support.v4.app.Fragment(dependency)
+
+

@@ -1,0 +1,241 @@
+6/march/2018
+=============
+
+Map Demo 
+Json Parsing
+Sharing
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+JSON Parsing
+=============
+
+Parsing Means writing your object data into our json or json to object data.(Its very simple) 
+
+{"employees":[
+
+	{"id" :123,
+	"name" : "Parag", 
+	"desig" : "Trainee",
+	"dept" : "Mobility",
+	},
+
+	{"id" :124,
+	"name" : "Ankit", 
+	"desig" : "TL",
+	"dept" : "Mobility",
+	},
+
+
+	{"id" :125,
+	"name" : "Akhil", 
+	"desig" : "Project Manager",
+	"dept" : "Mobility",
+	},
+
+	{"id" :126,
+	"name" : "Gaurav", 
+	"desig" : "Software Developer",
+	"dept" : "Mobility",
+	}]
+};
+
+
+
+
+-It loads faster.
+-It supports Data type.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-There are lot of terminologies in market.
+-These are third party libraries
+
+Usually, Android SDK is providing json parsing support.(Not mandatory to use third party libraries). 
+
+1.GSON()
+2.Jackson
+3.Jettison
+4.SimpleJson
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-Whenever user hit "writeJSON" button, we want to write the data into one JSON file. (This is our main Target) 
+
+JSON lOGIC (1st Step)
+
+	try{	
+	JSONObject jsonObject = new JSONObject(); // we create main json <{}> object
+	JSONArray jsonArray = new JSONArray(); // we created json Array
+	JSONObject emp_obj = new JSONObject();
+	emp_obj.put("id",et1.getText().toString());
+	emp_obj.put("name",et1.getText().toString());
+	emp_obj.put("desig",et1.getText().toString());// by these 4 line of code we created individual object.
+	emp_obj.put("dept",et1.getText().toString()); //NOW, WE NEED TO ADD THESE INDIVIDUAL ITEMS TO ARRAY(TO MAIN JSON OBJECT)
+	
+
+	array.put(emp_obj);	//NOW, WE NEED TO ADD THESE INDIVIDUAL ITEMS TO ARRAY(TO MAIN JSON OBJECT) >>DID<< array we added
+
+	//NOW, THIS ARRAY WE NEED TO ADD TO MAIN JSON OBJECT 
+	//WHILE YOU ARE ADDING THIS ARRAY TO THE MAIN JSON OBJECT, WE HAVE TO SPECIFY KEY FOR THIS.
+
+
+	jsonObject.put("employees",jsonArray)	//GIVE a KEY
+	
+	}catch(Exception e);
+
+
+
+Now we need to write the data into file, (we get the data in the string format..!)
+
+
+
+into file >>>>  FileWriter fileWriter = new FileWriter("storage/emulated/0/jsonParsing.json");
+		fileWriter.write(jsonObject.toString());
+		fileWriter.flush();
+		fileWriter.close();
+				__________________________________	
+
+				|THAT's ALL ABOUT WRITING THE DATA|
+				__________________________________					
+
+
+
+
+========================================================================================================================================================================
+
+READ THE DATA from json
+==============
+
+
+
+how we return data into a file
+
+NOW
+===
+:::::::::::1. Step:::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::
+from FILE to STRING(we have to convert)
+:::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::
+
+
+FileReader is a class to read the data from the file
+
+FileReader reader = new FileReader("storage/emulated/0/jsonParsing.json"); //this is only for to which file you need to read the data.
+
+String msg =  " ";
+
+int i = reader.read();
+
+while (i != -1){		
+	msg=msg+(char)i;
+	i=reader.read();
+}		//Accomplish first step by this line
+
+
+
+[Continue later...........]
+
+=========================================================================================================================================================================
+=========================================================================================================================================================================
+=======================================================================FIREBASE :::::21 APPS=============================================================================
+=========================================================================================================================================================================
+=========================================================================================================================================================================
+=========================================================================================================================================================================
+
+
+
+-SUPPORTED BY GOOGLE
+
+FEATURES
+=========
+
+-Real time database
+-Authentication
+-Cloud Storage System
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

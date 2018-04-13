@@ -1,0 +1,172 @@
+14-march-2018
+==============
+________
+:Agenda:
+________
+
+-117mins Fragment Devslopes[Done]
+-70mins Mahesh // Fragment [Done]
+-74mins Services [Done]
+-48mins Broadcast Receiver []
+-56mins Constraint layout []
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+-Considering fragments wrt mahesh sir......
+-Header part in mandatory under fragments, means header part is fixed for all the screens
+
+-As per our knowledge each and every screen is Activity 
+
+In activity there are 2 disad
+
+- In each and every screen we have to create header and footer part(code duplication is the one disadvantage)
+- 2nd disadvantage is  ==>  let say, I want icici bank header and footer rather than kotak mahindra bank then, we have to change in all activites
+
+
+Highly recommended ==>>>>>>>>>>>>>> 
+
+For entire project you have to create 1 activity , remaining all you have to crete as Fragment
+
+
+
+--Fragment is a UI component.
+
+-Frament is subtype of Activity.
+
+-In activity_main.xml
+<fragment comp.>
+or
+<FrameLayout component>
+
+-Each fragment is having its own life cycle(maintain by java) and its own user interface.
+
+-In a single activity we can create number of Fragments. 
+
+
+
+Steps to Fragment
+==================
+
+- Create a class with subtype of android.app.Fragment
+
+-same like onCreate() in activity, in Fragments onCreateView() will be invoke first, So provide the implementation for onCreateView()
+
+eg : 
+
+class MyFrag extents android.app.Fragement{
+
+
+@Overide
+public View onCreateView(LayoutInflator inflator,ViewGroup group, Bundle b ){
+
+View v = inflater.inflate(<which xml you want to convert into view object"R.layout.xml_file">, <group>, false);
+
+
+return v;
+}
+
+}
+
+Note: LayoutInflater class is used to convert xml to View object. 
+
+-From Activity class we will manage fragments using the following code:
+
+basically we required 2 classes object.
+
+1.FragmentManger fManager = getFragmentManager();
+2.FragmentTransaction tx = fManger.beginTreansaction();
+ 
+
+tx.add/replace/remove(frag_id, new FragmentClass());
+
+-Fragment concept is introduced from Android 3.0, so minimum version to use the Fragments is 3.0.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------===========Services==============
+
+A long running background process without any user interaction is called as Service.
+
+Steps for Creating Service.
+===========================
+
+-Create a class subtype of android.app.Service
+-It is an abstract class, having an abstract method called onBind(),
+-Following are the major methods in service class
+
+onCreate()
+onStartCommand()
+onDestroy()
+
+-When we start a service, If the service is not available it will invoke onCreate() and onStartCommand() method, 
+If the service already availabe it will invoke onStartCommand() method.
+
+-When we stop a service it will invoke onDestroy() method.
+
+-Service doesn't contain any UI we will manage service by using intents.
+
+	Intent intent = new Intent();
+	intent.setComponent(new ComponentName(this, class_name));
+	startService(intent);
+	stopService(intent);
+
+-Every service class we have to configure in manifest.xml with the following tag, inside <application> tag.
+
+	<service android:name = "pkg_name.class_name"/>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+=========Broadcast Receiver========
+
+BR reg for system annoncement
+
+-Headset plugin
+-Charger connected or dissconnected
+-Screen is ON/OFF
+-Making/Receiving Call
+
+Steps to work with Broadcast Receiver:
+----------------------------------------
+
+-Create a class with subtype of android.content.BroadcastReceiver
+-It is an abstract class having an abstract method called onReceive().
+-From Activity class for which events you want to get the Broadcast announcements configure the events using IntentFilter(group of Intent).
+
+IntentFilter filter = new IntentFilter();
+filter.addAction(Intent.ACTION_HEAD_SET_PLUGIN);     //for which event you want the announcement, configure in this function
+filter.addAction(Intent.ACTION_POWER_CONNECTED);
+filter.addAction(Intent.ACTION_POWER_DISCONNECTED);
+filter.addAction(Intent.ACTION_SCREEN_ON);
+filter.addAction(Intent.ACTION_SCREEN_OFF);
+
+registerReceiver(BR_class_object, filter);
+
+if any one of the configure event is happened, it will invoke onReceive() method in the BroadcastReceiver.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

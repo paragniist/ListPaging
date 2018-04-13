@@ -1,0 +1,25 @@
+28-feb-2018
+============
+
+sliders [incomplete] // reason behind : the app got crashed while implementing the dunctionality of Rangebar()
+
+As a part of sliders simple slider[Done].
+
+Swipe to Refresh
+=================
+
+It is usually used in browser app or the app communicating to the server
+
+
+
+
+
+
+Camera
+ListView_1
+note:- by using ArrayAdapter<String> we can present only String type of data, to present your own
+UI on individual item use Custom Adapter.
+
+
+Assignment Submission
+

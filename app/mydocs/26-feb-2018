@@ -1,0 +1,96 @@
+
+Progress Bar[Done]
+==================
+
+
+
+-Text Feild[Done]
+==================
+setOnFocusChangedListener
+addTextChangeListener
+
+
+Usage
+
+Text fields validate input, help users fix errors, autocomplete words, and provide suggestions.
+Field types
+
+Single-line
+Multi-line
+Text area
+Input types
+
+Formatted inputs
+Nested menus & pickers
+
+
+
+Buttons[Done]
+=======
+
+-Flat buttons
+
+Flat buttons are text-only buttons.
+They may be used in dialogs, toolbars, or inline.
+They do not lift, but fill with color on press.
+
+-Raised buttons
+
+Raised buttons are rectangular-shaped buttons.
+They may be used inline.
+They lift and display ink reactions on press.
+
+-FAB
+
+
+
+
+
+
+
+
+Dialogs [Done]
+========
+
+Alert Dialogs---- has text and 2 actions(actions here is flat Buttons )
+
+Confirmation Dialogs---- has title and 2 actions and number od radio button
+
+Progress Dialogs
+
+
+Bottom Navigation[Done]
+=======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

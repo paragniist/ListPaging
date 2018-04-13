@@ -1,0 +1,16 @@
+Firebase Devslopes
+
+-Firebase Auth
+-Firebase DB:
+	It is real time database.[CRUD](where we can store all the data)
+-Firebase Storage
+	-This is where user can upload files and things like that.
+	-Let say when user submit image through the app, It can be stored in Firebase storage. 
+	-And we can access at later point of time.
+
+
+>>Realtime Database Rules<<
+============================
+Inorder to perform database operation, security rules require users to be authenticated.
+
+

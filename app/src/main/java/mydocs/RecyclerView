@@ -1,0 +1,29 @@
+add dependency for recyclerview
+
+
+com.android.support.recyclerview-v7:24.0.1
+
+in xml file we have to create rv comp 
+
+now get the rv comp in java code
+"RecyclerView rview=(RecyclerView)findViewById(R.id.rview1)"
+
+
+now i want to present a data, so for presenting the dsata we need to create a xml file in which format you need ro present the data
+so we have to create a adapter.
+
+
+xml file for presenting data
+indiview.xml
+
+
+
+..cardview add dependency
+
+com.android.support.cardview-v7:24.0.1
+
+
+xml file for presenting data
+indiview.xml
+
+liner k andar  cardview insude again LL(w:mp,h:100dp,O:h,)
